@@ -318,47 +318,13 @@ Expected Output: Detailed information about the latest block, including base fee
 Initiate transactions, such as contract function calls, using `zkcast`:
 
 ```sh
-cast zk-send <CONTRACT_ADDRESS> <FUNCTION_SIGNATURE> <ARGUMENTS> --rpc-url <RPC-URL> --private-key <PRIVATE-KEY> --chain <CHAIN-ID>
+cast send <CONTRACT_ADDRESS> <FUNCTION_SIGNATURE> <ARGUMENTS> --rpc-url <RPC-URL> --private-key <PRIVATE-KEY> --chain <CHAIN-ID>
 ```
 
 Example:
 
 ```sh
-cast zk-send 0x97b985951fd3e0c1d996421cc783d46c12d00082 "setGreeting(string)" "Hello, zkSync!" --rpc-url http://localhost:3050 --private-key <PRIVATE-KEY> --chain 270
+cast send 0xe34E488C1B0Fb372Cc4a5d39219261A5a6fc7996 "setGreeting(string)" "Hello, zkSync!" --rpc-url https://sepolia.era.zksync.dev --private-key <PRIVATE-KEY> --chain 300
 ```
 
 This command calls the `setGreeting` function of a contract, updating the greeting to "Hello, zkSync!". Replace `<PRIVATE-KEY>` with your actual private key.
-
-### Bridging Assets Between L1 and L2
-
-#### L1 to L2 Deposits
-
-Deposit assets from Layer 1 (Ethereum) to Layer 2 (zkSync):
-
-```sh
-cast zk-deposit <RECIPIENT_ADDRESS> <AMOUNT> <TOKEN> --l1-rpc-url <L1-RPC-URL> --l2-url <L2-RPC-URL> --chain <CHAIN-ID> --private-key <PRIVATE-KEY>
-```
-
-Note: For ETH deposits, leave the `<TOKEN>` parameter empty.
-
-Example (Depositing ETH):
-
-```sh
-cast zk-deposit 0x36615Cf349d7F6344891B1e7CA7C72883F5dc049 1 ether --l1-rpc-url http://localhost:8545 --l2-url http://localhost:3050 --private-key <PRIVATE-KEY> --chain 270
-```
-
-#### L2 to L1 Withdrawals
-
-Withdraw assets from Layer 2 back to Layer 1:
-
-```sh
-cast zk-send --withdraw <RECIPIENT_ADDRESS> --amount <AMOUNT> <TOKEN> --rpc-url <L2-RPC-URL> --private-key <PRIVATE-KEY> --chain <CHAIN-ID>
-```
-
-Example (Withdrawing ETH):
-
-```sh
-cast zk-send --withdraw 0x36615Cf349d7F6344891B1e7CA7C728
-
-83F5dc049 --amount 1 ether --rpc-url http://localhost:3050 --private-key <PRIVATE-KEY> --chain 270
-```
