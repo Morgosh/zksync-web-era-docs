@@ -65,11 +65,11 @@ Configuration can be arbitrarily namespaced by profiles. The default profile is 
 
 You can select another profile using the `FOUNDRY_PROFILE` environment variable. You can also override parts of your configuration using `FOUNDRY_` or `DAPP_` prefixed environment variables, like `FOUNDRY_SRC`.
 
-`zkforge init` creates a basic, extendable `foundry.toml` file.
+`forge init` creates a basic, extendable `foundry.toml` file.
 
 To see your current configuration, run `forge config`. To see only basic options (as set with `forge init`), run `forge config --basic`. This can be used to create a new `foundry.toml` file with `forge config --basic > foundry.toml`.
 
-By default `zkforge config` shows the currently selected foundry profile and its values. It also accepts the same arguments as `zkforge build`. An example `foundry.toml` for zkSync with zksolc configurations may look like:
+By default `forge config` shows the currently selected foundry profile and its values. It also accepts the same arguments as `forge build`. An example `foundry.toml` for zkSync with zksolc configurations may look like:
 
 ```
 [profile.default]
@@ -315,7 +315,7 @@ Expected Output: Detailed information about the latest block, including base fee
 
 ### Sending Transactions
 
-Initiate transactions, such as contract function calls, using `zkcast`:
+Initiate transactions, such as contract function calls, using `cast`:
 
 ```sh
 cast send <CONTRACT_ADDRESS> <FUNCTION_SIGNATURE> <ARGUMENTS> --rpc-url <RPC-URL> --private-key <PRIVATE-KEY> --chain <CHAIN-ID>
