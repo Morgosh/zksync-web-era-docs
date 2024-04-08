@@ -89,7 +89,7 @@ mode = "3"
 
 ### Running Tests
 
-Use `forge test --zksync` to run tests written for your smart contracts. For an overview of how to write tests using `Foundry-zksync` please refer to Foundry testing [here](../../test-and-debug/foundry.md).
+Use `forge test --zksync` to run tests written for your smart contracts. For an overview of how to write tests using `foundry-zksync` please refer to Foundry testing [here](../../test-and-debug/foundry.md).
 
 ## Deploying Smart Contracts with `forge`
 

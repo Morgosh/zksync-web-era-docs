@@ -19,7 +19,7 @@ For more detailed documentation related to Foundry testing please refer to the o
 
 ## Running Tests
 
-To initiate your tests, use the `forge test --zksync` command with the `--zksync` flag or make us of `vm.zkVm(true)` in your tests. This command automatically locates and executes tests across your source directory. Here's an example of executing tests in a standard project setup:
+To initiate your tests, use the `forge test --zksync` command with the `--zksync` flag, or incorporate `vm.zkVm(true)` within your tests. This command automatically locates and executes tests across your source directory. Here's an example of executing tests in a standard project setup:
 
 ```bash
 forge test --zksync
