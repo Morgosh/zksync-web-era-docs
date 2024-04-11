@@ -9,11 +9,6 @@ head:
 
 The following NFT marketplaces are specialized in facilitating the trade, creation, and management of NFTs. These platforms offer distinct features and benefits.
 
-### zkMarkets
-
-[zkMarkets](https://www.zkmarkets.com/zksync-era) is a native NFT marketplace on zkSync, supporting paymasters and Smart Wallets like Clave. It features a Launchpad, rarity tools, and aggregated listings.
-**Specialty**: Aggregated Marketplace, Paymasters, Smart Accounts, Rarity tools 
-
 ### Element
 
 [Element](https://element.market/) is a community-driven aggregated marketplace where you can buy and sell NFTs across different platforms, save money, and earn rewards.\
@@ -33,6 +28,11 @@ The following NFT marketplaces are specialized in facilitating the trade, creati
 
 [Tevaera](https://market.tevaera.com/) is the first paymasters and ONFT powered marketplace on the zkSync Era. It offers the lowest transaction fees while being fully secured by the Ethereum consensus.\
 **Specialty**: zkSync Era, Low Fees, Paymasters and ONFT
+
+### zkMarkets
+
+[zkMarkets](https://www.zkmarkets.com/zksync-era) is a native NFT marketplace on zkSync, supporting paymasters and Smart Wallets like Clave. It features a Launchpad, rarity tools, and aggregated listings.
+**Specialty**: Aggregated Marketplace, Paymasters, Smart Accounts, Rarity tools 
 
 ### Zonic
 
