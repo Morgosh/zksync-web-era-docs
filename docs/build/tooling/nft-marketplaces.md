@@ -32,7 +32,7 @@ The following NFT marketplaces are specialized in facilitating the trade, creati
 ### zkMarkets
 
 [zkMarkets](https://www.zkmarkets.com/zksync-era) is a native NFT marketplace on zkSync, supporting paymasters and Smart Wallets like Clave. It features a Launchpad, rarity tools, and aggregated listings.
-**Specialty**: Aggregated Marketplace, Paymasters, Smart Accounts, Rarity tools 
+**Specialty**: Aggregated Marketplace, Paymasters, Smart Accounts, Rarity tools
 
 ### Zonic
 
